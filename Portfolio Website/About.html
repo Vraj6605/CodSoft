@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vraj</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalnia ', system-ui;
+        }
+
+        body {
+            background-color: rgb(14, 5, 38);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            background-color: rgb(5, 14, 47);
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        nav>div {
+            width: 30rem;
+        }
+
+        .right ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .right {
+            width: 60vw;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .right ul li:hover {
+            color: #c18de9;
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        }
+
+        .left {
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        }
+
+        @media only screen and (max-width: 861px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                padding: 10px;
+
+            }
+
+            .right {
+                margin-top: 10px;
+                width: 100%;
+
+            }
+
+            .right ul {
+                justify-content: space-around;
+
+            }
+
+
+        }
+
+        .int {
+            margin: 10px 20px;
+            width: 70vw;
+            padding: 20px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .photo img {
+            height: 50vh;
+            width: 20vw;
+            
+        }
+
+        @media only screen and (max-width: 861px) {
+            section {
+
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .photo img {
+            height: 50vh;
+            width: 60vw;
+            
+        }
+        }
+        .photog img{
+            width: 100px;
+            height: 100px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vraj Developer</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="int">
+            <h2>About Me</h2>
+            I am a passionate creator with a love for coding, drawing, and photography. Ever since I can remember, I've
+            been immersed in the world of creativity, finding joy in every project I undertake. Whether it's writing
+            elegant lines of code, bringing characters to life on paper, or capturing moments through the lens of my
+            camera, I thrive on the endless possibilities of expression.
+        </div>
+    </section>
+
+    <section>
+        <div class="photo">
+            <img src="Assets/AboutProfile-removebg-preview.png" alt="">
+        </div>
+
+        <div class="int">
+            <ul>
+                <li>Hello, I'm Makwana Vraj, currently pursuing Computer Engineering at GEC Modasa, where I'm deeply
+                    engaged in exploring the dynamic world of technology.</li>
+                <li>Originally from Anand, I've always been fascinated by the ever-evolving landscape of technology.
+                    This passion led me to pursue a degree in Computer Engineering, where I'm gaining invaluable
+                    insights and practical skills to navigate the digital age.</li>
+                <li>At GEC Modasa, I'm immersed in a rigorous curriculum that covers a spectrum of topics in computer
+                    engineering. From foundational principles to advanced concepts, I'm actively honing my skills to
+                    become a proficient technologist.</li>
+                <li>I possess a diverse skill set that spans both front-end and back-end development. Proficient in
+                    HTML, CSS, and JavaScript, I enjoy crafting visually appealing and user-friendly websites. On the
+                    back-end, I'm adept at Java programming, with hands-on experience in technologies like Servlets,
+                    JSP, and Spring. Additionally, my knowledge of SQL enables me to effectively manage databases and
+                    retrieve insights from data.</li>
+                <li>Coding is not just a profession for me; it's a passion. I find immense joy in solving complex
+                    problems and bringing innovative ideas to life through programming. Furthermore, I have a keen
+                    interest in web design, constantly exploring new trends and techniques to create engaging user
+                    experiences.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="int">
+            <h2>HTML , CSS , JAVASCRIPT</h2>
+            I possess a strong command of the fundamental building blocks of web development: HTML, CSS, and JavaScript. These core technologies form the backbone of modern web design and enable me to create dynamic, interactive, and visually appealing websites and applications.
+        </div>
+        <div class="photo">
+            <img  width="auto; height:100px;"  src="Assets/Web Development.png" alt="">
+        </div>
+       
+    </section>
+
+    <section>
+        <div class="photo">
+            <img src="Assets/Java.png" alt="">
+        </div>
+
+        <div class="int">
+            <h2>Server Side Programming</h2>
+            I possess comprehensive expertise in developing robust, scalable, and efficient web applications using Java Spring Boot and MongoDB. These technologies form a powerful stack for building modern, data-driven solutions that deliver exceptional performance, reliability, and flexibility.
+        </div>
+    </section>
+
+    <section>
+       
+        <div class="int">
+            <h2>Photography</h2>
+            Photography allows me to capture fleeting moments and preserve them for eternity. Through my lens, I seek to
+            evoke emotions, provoke thought, and showcase the beauty of the world around us. From breathtaking
+            landscapes to intimate portraits, my photography is a reflection of my curiosity and appreciation for life's
+            wonders.
+            My photography is an extension of my soul, reflecting my deep connection to the world around me. Through my lens, I strive to capture the beauty in the mundane, the magic in the ordinary, and the emotions that linger in the air. Each photograph is a testament to my personal vision and a window into my inner world.
+        </div>
+        <div class="photo">
+            <img src="Assets/Photography2.jpg" alt="">
+        </div>
+        
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vraj's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalnia ', system-ui;
+        }
+
+        body {
+            background-color: rgb(14, 5, 38);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            background-color: rgb(5, 14, 47);
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        nav>div {
+            width: 30rem;
+        }
+
+        .right ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right {
+            width: 60vw;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .right ul li:hover {
+            color: #c18de9;
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        }
+
+        .left {
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        }
+
+        .first_section {
+            display: flex;
+            justify-content: space-around;
+            width: 95vw;
+            padding: 20px;
+            margin: 30px 0px;
+        }
+
+        .rightsection img {
+            width: 50vw;
+        }
+
+        .rightsection img :hover {
+            transform: scale(1.3);
+            transition-property: transform;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .leftsection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .leftsection div {
+            font-family: 'Kalnia', system-ui;
+            font-size: 40px;
+        }
+
+        .leftsection span {
+            font-family: 'Kalnia ', system-ui;
+            font-size: 40px;
+            text-shadow: 0 0 20px #1efffb, 0 0 40px #70b2d0;
+        }
+
+        .purpole {
+            color: rgb(140, 133, 248);
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        }
+
+        .hr {
+            border-top: 2px solid white;
+            width: 90vw;
+            margin: auto;
+
+        }
+
+        .Intro h1 {
+            margin: 20px 10vw;
+            border-bottom: 2px solid white;
+            width: 165px;
+            border-radius: 10px;
+            font-weight: 40px;
+            font-size: 30px;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        }
+
+        .Intro p,
+        ul {
+            margin: 5px 10vw;
+            word-break: break-all;
+            text-justify: auto;
+            padding-top: 2px;
+        }
+
+        #myinfo {
+            line-height: 2.5rem;
+        }
+
+        .ftr {
+            margin: auto auto;
+            display: block;
+            width: fit-content;
+            font-size: small;
+            color: rgb(140, 133, 248);
+            padding: 3em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        #myinfo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @media only screen and (max-width: 861px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                padding: 10px;
+            }
+
+            .right {
+                margin-top: 10px;
+                width: 100%;
+
+            }
+
+            .right ul {
+                justify-content: space-around;
+
+            }
+        }
+
+        .new {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 40vw;
+            background-color: inherit;
+            border-bottom: 1px solid gray;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 5px 20px;
+            color: inherit;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: inherit;
+        }
+        #skill{
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vraj Makwana</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="first_section">
+
+            <div class="leftsection">
+                <div>Hello,</div>
+                <div>I am Makwana <span class="purpole">VRAJ</span></div>
+                <div>GEC MODASA</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Web Developer', 'Software Engineer', 'Data Scientist', 'Web Desighner'],
+                        typeSpeed: 60,
+                    });
+                </script>
+            </div>
+
+            <div class="rightsection">
+                <img src="https://www.dharmishi.com/img/vectors/developer.png" alt="" srcset="">
+            </div>
+
+        </section>
+
+        <section class="second_section">
+
+            <div class="hr"></div>
+
+            <div class="Intro">
+
+                <h1>Introduction</h1>
+                <p id="myinfo">
+                <ul>
+                    Hello, I'm Makwana Vraj, currently pursuing Computer Engineering at GEC Modasa, where I'm deeply
+                    engaged in exploring the dynamic world of technology.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="Intro Intro2 center">
+                <h1 id="Intro_h1">MY Skills:</h1>
+                <ul>
+                    <li>Front-end
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li style="width: 100px;">JavaScript</li>
+                            <li>Java,JSP</li>
+                            <li>React JS</li>
+                        </ul>
+                    </li>
+                    <li>Back-end
+                        <ul>
+                            <li>Node JS</li>
+                            <li>Express JS</li>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                        </ul>
+                    </li>
+                    <li>Soft Skills
+                        <ul>
+                            <li>Leadership</li>
+                            <li>Mentor</li>
+                            <li style="width: 200px;">Communication Skill</li>
+                         
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+        <!-- <section id="skill">
+            <img src="Assets/bar_chart-removebg-preview.png" alt="">
+        </section> -->
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <br>
+
+
+    <footer>
+        <div class="hr"></div>
+        <span class="ftr"> &copy; Copyright by Vraj Makvana 2024</span>
+    </footer>
+</body>
+
+</html>

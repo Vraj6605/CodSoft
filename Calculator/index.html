@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vraj's Calculator</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .con {
+            width: 300px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 8px;
+            border-radius: 10px;
+                }
+
+        .row {
+            display: flex;
+
+        }
+
+        .display {
+            width: 240px;
+            height: 30px;
+            padding: 10px;
+            background-color: rgb(255, 247, 226);
+            border: 2px solid black;
+            color: black;
+            font-size: larger;
+            margin-top: 20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Vraj's Calculator</h1>
+    </center>
+
+    <div class="con">
+        <div class="display" id="dis">
+
+        </div>
+        <div class="row">
+            <button class="btns" id="btn1">7</button>
+            <button class="btns" id="btn2">8</button>
+            <button class="btns" id="btn3">9</button>
+            <button class="btns" id="btn4">*</button>
+        </div>
+        <div class="row">
+            <button class="btns" id="btn5">4</button>
+            <button class="btns" id="btn6">5</button>
+            <button class="btns" id="btn7">6</button>
+            <button class="btns" id="btn8">-</button>
+        </div>
+        <div class="row">
+            <button class="btns" id="btn1b">1</button>
+            <button class="btns" id="btn2b">2</button>
+            <button class="btns" id="btn3b">3</button>
+            <button class="btns" id="btn4b">/</button>
+        </div>
+        <div class="row">
+            <button class="btns" id="btn5b">Clear</button>
+            <button class="btns" id="btn6b">mc+</button>
+            <button class="btns" id="btn7b">0</button>
+            <button class="btns" id="btn8b">=</button>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <center>
+            Designed by Vraj Makwana &copy;copyright | 2024
+        </center>
+    </footer>
+    <script>
+
+        let display = document.getElementById("dis");
+        let btns = document.querySelectorAll(".btns");
+
+        let str = "";
+        let array = Array.from(btns).forEach((e) => {
+
+            e.addEventListener("click", () => {
+                try {
+                    if (e.innerHTML == "=") {
+                        display.innerHTML = eval(str);
+                        str = " ";
+                    }
+                    else if (e.innerHTML == "Clear") {
+                        str = " ";
+                        display.innerHTML = str;
+                    }
+                    else if(e.innerHTML == "mc+"){
+                        display.innerHTML = "Not Working"
+                    }
+                    else {
+                        str += e.innerHTML;
+                        display.innerHTML = str;
+                    }
+                }
+                catch (e) {
+                    display.innerHTML = e;
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>

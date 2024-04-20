@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project's Vraj</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalnia ', system-ui;
+        }
+
+        body {
+            background-color: rgb(14, 5, 38);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            background-color: rgb(5, 14, 47);
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        nav>div {
+            width: 30rem;
+        }
+
+        .right ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .right {
+            width: 60vw;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .right ul li:hover {
+            color: #c18de9;
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        }
+
+        .left {
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        }
+
+        @media only screen and (max-width: 861px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                padding: 10px;
+
+            }
+            
+
+            .right {
+                margin-top: 10px;
+                width: 100%;
+
+            }
+
+            .right ul {
+                justify-content: space-around;
+
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                border: 2px solid white;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 20px;
+                margin: 10px auto;
+            }
+            .pdes  h2,p {
+                width: 60vw;
+                display: flex;
+                
+            }
+
+        }
+
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* .card{
+            width: 40vw;
+            height: 20vh;
+            border: 1px solid rgb(33, 33, 248);
+            padding: 20px;
+            margin-top: 10px;
+        } */
+        .pimg img {
+            width: 400px;
+            height: 250px;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+
+        .pdes {
+            width: 35vw;
+        }
+
+        .pdes a {
+            text-decoration: none;
+            color: rgb(162, 213, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vraj Developer</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- <div class="card"> -->
+        <div class="pimg">
+            <img src="Assets/Spotify.png" alt="">
+        </div>
+        <div class="pdes">
+            <h2>Spotify Clone</h2>
+            <p>I was make Exactly Same to same Spotify Clone.</p>
+            <br>
+            <p><a href="https://vraj6605.github.io/Spotify/">Click Here</a></p>
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <section>
+        <div class="pdes">
+            <h2>Tic Tak Toe Game</h2>
+            <p>This is my first Project Using JavaScript.When I learn Javascript then i was made this project.</p>
+            <br>
+            <p><a href="https://vraj6605.github.io/TicTakGame/">Click Here</a></p>
+        </div>
+
+        <div class="pimg">
+            <img src="Assets/Tic Tak.png" alt="">
+        </div>
+    </section>
+
+
+    <section>
+        <div class="pimg">
+            <img src="Assets/Instagram .png" alt="">
+        </div>
+        <div class="pdes">
+            <h2>Instagram Following Feature</h2>
+            <p>In this Project i Implement that how the Following system work in Instagram Mobile Application. so I just
+                Implement the same feture by Writing pure javascript code.</p>
+            <br>
+            <p><a href="https://vraj6605.github.io/Instagram-Feature/">Click Here</a></p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="pdes">
+            <h2>Online Grocery Shop</h2>
+            <p>In this Project i Implement Website with Database and fully Functional E-commerce Websiteby which User
+                can place order. <b>I was add new features to giving order. You Must Try it! (Click on SpeakOrder).</b></p>
+            <br>
+            <p><a href="https://vraj6605.github.io/Grocery-Project/">Click Here</a></p>
+        </div>
+        <div class="pimg">
+            <img src="Assets/Grocery Shop.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

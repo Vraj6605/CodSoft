@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact to Vraj</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalnia ', system-ui;
+        }
+
+        body {
+            background-color: rgb(14, 5, 38);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            background-color: rgb(5, 14, 47);
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        nav>div {
+            width: 30rem;
+        }
+
+        .right ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .right {
+            width: 60vw;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+        }
+
+        .right ul li a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .right ul li:hover {
+            color: #c18de9;
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        }
+
+        .left {
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+
+        }
+
+        @media only screen and (max-width: 861px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                padding: 10px;
+               
+            }
+            input ,textarea {
+            width: 40vw;
+            background-color: inherit;
+            border-bottom: 1px solid gray;
+            border-radius: 20px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: larger;
+            box-shadow: 2px 2px white;
+        }
+
+            .right {
+                margin-top: 10px;
+                width: 100%;
+
+            }
+
+            .right ul {
+                justify-content: space-around;
+
+            }
+
+
+        }
+        .new {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        input ,textarea {
+            width: 40vw;
+            background-color: inherit;
+            border-bottom: 1px solid gray;
+            border-radius: 20px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: larger;
+            box-shadow: 2px 2px white;
+        }
+        label{
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 20px;
+            color: inherit;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: inherit;
+            box-shadow: 2px 2px white;
+        }
+        .txt{
+            display: inline-block;
+        }
+        .msg{
+            width: 90vw;
+            height: 20px;
+            padding: 20px;
+            border: 1px solid rgb(150, 150, 150);
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #crossbtn{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            box-shadow: none;
+            font-size: larger;
+        }
+        #crossbtn:hover{
+            scale: 1.2;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vraj Developer</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="msg hide" >
+            <div class="txt">
+
+            </div>
+            <div class="cross">
+                <button id="crossbtn">✖️</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="new">
+        <h1 style="font-size: 40px;">Contact Me</h1>
+        <br>
+        <label for="Name">Name </label>
+        <input type="text" name="Name" id="Name" placeholder="Enter Your Fullname Here" required>
+
+        <br>
+
+        <label for="Name">Email </label>
+        <input type="email" name="Name" id="Name" placeholder="Enter Your Email Id Here" required>
+
+        <br>
+
+        <label for="query">Feedback  </label>
+        <textarea name="query" id="query" cols="80" rows="10" placeholder="Enter Your Feedback Here" required></textarea>
+        <br>
+        
+       <input style="color: rebeccapurple;" type="submit" id="submit">
+       <br>
+       
+    </section>
+
+    <script>
+        let btn = document.getElementById("submit");
+        let text = document.querySelector(".txt");
+        let box  = document.querySelector(".msg");
+        let crossbtn = document.getElementById("crossbtn");
+
+        btn.addEventListener("click" , ()=>{
+            box.classList.remove("hide")
+            text.innerHTML = "<h1>Your Feedback Sent Successfully.</h1>"
+        })
+
+        crossbtn.addEventListener("click",()=>{
+            box.classList.add("hide")
+        })
+
+    </script>
+</body>
+
+</html>

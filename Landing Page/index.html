@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Boy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+            background-color: azure;
+        }
+
+        nav ul li:hover {
+            background-color: red;
+            padding: 20px;
+            transition-duration: 1s;
+            border-radius: 20px;
+
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .nav-item {
+            width: 700px;
+        }
+
+        .nav-item ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-item ul li {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        .nav-item ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            height: 60vh;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+
+        section .left {
+            width: 50vw;
+            height: 30vh;
+            /* background-color: red; */
+            padding: 20px;
+        }
+
+        .right {
+            width: 50vw;
+            height: 0vh;
+            height: auto;
+            /* background-color: aquamarine; */
+        }
+
+        .left img {
+            width: 100%;
+            height: 50vh;
+            border: 2px solid green;
+            border-radius: 20px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: inherit;
+            flex-direction: column;
+            margin: 20px;
+            height: 50vh;
+            border-radius: 30px;
+            font-size: 30px;
+        }
+
+        #new {
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            margin-bottom: 10vh;
+            /* background-color: rgb(194, 133, 133);     */
+        }
+
+        .img {
+            /* background-color: red; */
+            height: 300px;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .div {
+            width: 250px;
+            height: 150px;
+            margin: 2px 10px;
+            object-fit: fill;
+        }
+
+        .div:hover {
+            scale: 1.3;
+            transition-duration: .5s;
+            /* transform: rotate(360deg); */
+            transition-timing-function: ease-in-out;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .foot1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 10px;
+
+        }
+
+        .opt {
+            width: 200px;
+            height: 200px;
+        }
+
+        .opt ul li {
+            list-style: none;
+        }
+
+        #feedback {
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        .foot4 {
+            width: 100vw;
+            height: 40px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .foot3 {
+            height: 200px;
+            margin-top: 10px;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .img {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="left">
+            <img src="Assets/pizza.jpg" alt="">
+        </div>
+        <div class="right">
+            <h1 style="color: red;">A Slice of Heaven</h1>
+            <p>Dive into a medley of mouthwatering flavors with our signature pizzas, each meticulously crafted to
+                tantalize your senses. From classic Margheritas to bold BBQ Chicken, there's a slice to suit every
+                craving.</p>
+        </div>
+    </section>
+    <section id="new">
+        <h1 style="font-size: 40px;color: red;">Our Famous Pizza</h1>
+        <div class="img">
+            <div class="div">
+                <img src="Assets/png-transparent-california-style-pizza-sicilian-pizza-chrono-pizza-fast-food-pizza-menu-food-recipe-pizza-delivery-thumbnail-removebg-preview.png"
+                    alt="">
+                Indian
+            </div>
+            <div class="div">
+                <img src="Assets/png-clipart-pizza-pizza-thumbnail-removebg-preview.png" alt="">
+                South African
+            </div>
+            <div class="div">
+                <img height="200px" width="300px" src="Assets/3.png" alt="">
+                West Bangoal
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot1">
+            <div class="opt">
+                <h2>Order Now</h2>
+                <ul>
+                    <li>Deals</li>
+                    <li>Pizza</li>
+                    <li>Sides</li>
+                    <li>Drinks</li>
+                    <li>Desserts</li>
+                </ul>
+            </div>
+            <div class="opt">
+                <h2>About</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contactless Delivery</li>
+                    <li>Nutrition</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+            <div class="opt">
+                <h2>Our Policies</h2>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Risponsible disclosure</li>
+                    <li>FAQs & Help</li>
+                </ul>
+            </div>
+            <div class="opt">
+                <h2>Visit PizzaBoy</h2>
+                <ul>
+                    <li>Locate a store</li>
+                    <li>Global blog</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot4">
+            <div class="leftr">
+                <h3>Help us in Serving you better <button id="feedback">Give Feedback</button> </h3>
+            </div>
+            <div class="rightr">
+                follow us <span style="color: rgb(153, 36, 90);">Instagram</span>
+            </div>
+        </div>
+        <div class="foot3">
+            <center>
+                <p>Order a delicious pizza on the go, anywhere, anytime. PizzaBoy is happy to assist you with your home
+                    delivery. Every time you order, you get a hot and fresh pizza delivered at your doorstep
+                    in less than thirty minutes. *T&C Apply. <br>
+                    Hurry up and place your order now! <br>
+
+                    © 2024 PizzaBoy India. All rights reserved. License Number: 10017011004220</p>
+            </center>
+        </div>
+        <center>
+            <h2>Designed By Vraj Makwana | &copy;copyright 2024 </h2>
+        </center>
+    </footer>
+
+
+</body>
+
+</html>
